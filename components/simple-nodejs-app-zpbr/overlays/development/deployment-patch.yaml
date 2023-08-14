@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: simple-nodejs-app-zpbr
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-tnvj-tenant/nodejs-users/simple-nodejs-app-zpbr@sha256:563aa3356d83a2c33b18a9b572c9edf93e2df463cd726ab36284921111e16511
+        name: my-nodejs
+        resources: {}
+status: {}
